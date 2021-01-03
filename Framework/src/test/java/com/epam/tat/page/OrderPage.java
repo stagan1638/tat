@@ -24,33 +24,21 @@ public class OrderPage extends AbstractPage {
     private WebElement orderButton;
 
     protected OrderPage(WebDriver driver) {
-        super(driver);
-        PageFactory.initElements(this.driver, this);
-    }
+        super(driver);PageFactory.initElements(this.driver, this);}
 
     public OrderPage inputPhoneNumber(){
         String phoneNumber="123456789";
-        phoneInput.sendKeys(phoneNumber);
-        return this;
-    }
+        phoneInput.sendKeys(phoneNumber);return this;}
 
     public OrderPage chooseCourierDelivery(){
-        courierDelivery.click();
-        return this;
-    }
+        courierDelivery.click();return this;}
 
     public OrderPage openMenyCityDelivery(){
-        chooseCityDelivery.click();
-        return this;
-    }
+        chooseCityDelivery.click();return this;}
 
     public OrderPage chooseCity(){
-        cityDelivery.click();
-        return this;
-    }
+        cityDelivery.click();return this;}
 
     @Override
-    protected AbstractPage openPage() {
-        return null;
-    }
+    protected AbstractPage openPage() {return null;}
 }
